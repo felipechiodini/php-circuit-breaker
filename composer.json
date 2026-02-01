@@ -1,0 +1,22 @@
+{
+    "name": "felipechiodini/circuit-breaker",
+    "type": "library",
+    "license": "MIT",
+    "description": "Circuit breaker pattern implementation in PHP",
+    "version": "0.1.0",
+    "autoload": {
+        "psr-4": {
+            "FelipeChiodini\\CircuitBreaker\\": "src/",
+            "Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Felipe Bona",
+            "email": "felipechiodinibona@hotmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "12"
+    }
+}
