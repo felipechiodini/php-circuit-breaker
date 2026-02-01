@@ -3,7 +3,7 @@
 namespace Tests;
 
 use FelipeChiodini\CircuitBreaker\CircuitBreaker;
-use FelipeChiodini\CircuitBreaker\Contracts\CircutBreakConfig;
+use FelipeChiodini\CircuitBreaker\Contracts\CircuitBreakConfig;
 use FelipeChiodini\CircuitBreaker\Contracts\Repository;
 use FelipeChiodini\CircuitBreaker\Exceptions\IsOpenException;
 use PHPUnit\Framework\TestCase;
@@ -13,7 +13,7 @@ class CircuitBreakerTest extends TestCase
     public function test_closed(): void
     {
         $repo = $this->createMock(Repository::class);
-        $config = $this->createMock(CircutBreakConfig::class);
+        $config = $this->createMock(CircuitBreakConfig::class);
 
         $config->method('getKey')
             ->willReturn('test');
@@ -37,7 +37,7 @@ class CircuitBreakerTest extends TestCase
     public function test_open(): void
     {
         $repo = $this->createMock(Repository::class);
-        $config = $this->createMock(CircutBreakConfig::class);
+        $config = $this->createMock(CircuitBreakConfig::class);
 
         $config->method('getKey')
             ->willReturn('test');

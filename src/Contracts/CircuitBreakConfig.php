@@ -2,7 +2,7 @@
 
 namespace FelipeChiodini\CircuitBreaker\Contracts;
 
-interface CircutBreakConfig
+interface CircuitBreakConfig
 {
     /**
      * @return string

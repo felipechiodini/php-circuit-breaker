@@ -2,7 +2,7 @@
 
 namespace FelipeChiodini\CircuitBreaker;
 
-use FelipeChiodini\CircuitBreaker\Contracts\CircutBreakConfig;
+use FelipeChiodini\CircuitBreaker\Contracts\CircuitBreakConfig;
 use FelipeChiodini\CircuitBreaker\Contracts\Repository;
 use FelipeChiodini\CircuitBreaker\Exceptions\IsOpenException;
 
@@ -25,11 +25,11 @@ class CircuitBreaker
      * run a request through the circuit breaker
      * 
      * @param callable $callback
-     * @param CircutBreakConfig $config
+     * @param CircuitBreakConfig $config
      * @return mixed
      * @throws IsOpenException
      */
-    public function run(callable $request, CircutBreakConfig $config): mixed
+    public function run(callable $request, CircuitBreakConfig $config): mixed
     {
         $key = $config->getKey();
 

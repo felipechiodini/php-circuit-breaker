@@ -19,9 +19,9 @@ composer require felipechiodini/circuit-breaker
 ```php
 use FelipeChiodini\CircuitBreaker\CircuitBreaker;
 use FelipeChiodini\CircuitBreaker\Contracts\Repository;
-use FelipeChiodini\CircuitBreaker\Contracts\CircutBreakConfig;
+use FelipeChiodini\CircuitBreaker\Contracts\CircuitBreakConfig;
 
-// Implement the Repository and CircutBreakConfig interfaces
+// Implement the Repository and CircuitBreakConfig interfaces
 $repository = new YourRepositoryImplementation();
 $config = new YourConfigImplementation();
 
