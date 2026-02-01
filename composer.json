@@ -3,12 +3,15 @@
     "type": "library",
     "license": "MIT",
     "description": "Circuit breaker pattern implementation in PHP",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "autoload": {
         "psr-4": {
             "FelipeChiodini\\CircuitBreaker\\": "src/",
             "Tests\\": "tests/"
         }
+    },
+    "require": {
+        "php": ">=8.3"
     },
     "authors": [
         {
