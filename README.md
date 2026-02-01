@@ -44,7 +44,7 @@ try {
 Run the tests using PHPUnit:
 
 ```bash
-vendor/bin/phpunit
+./vendor/bin/phpunit tests
 ```
 
 ## License
